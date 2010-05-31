@@ -3,6 +3,7 @@ import javax.jcr.Repository;
 import javax.jcr.RepositoryException;
 import javax.jcr.Session;
 
+// Description: Log in to repository 
 public class FirstHop {
 
     public static void main(String[] args) throws RepositoryException {

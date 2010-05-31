@@ -1,6 +1,5 @@
 import org.apache.jackrabbit.core.TransientRepository;
 import org.apache.jackrabbit.value.BinaryImpl;
-
 import javax.jcr.*;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -14,25 +13,8 @@ public class ThirdHop {
         try {
             Node root = session.getRootNode();
 
-            // Store content
-//            Node hello = root.addNode("hello");
-//            Node world = hello.addNode("world");
-//            world.setProperty("message", "Hello, World!");
-//            session.save();
-
-            // Remove content
-//            root.getNode("hello").remove();
-//            session.save();
-
             FileInputStream fileinputstream = new FileInputStream("/export/home/martin/Desktop/settings.jar");
             Binary bin = new BinaryImpl(fileinputstream);
-
-//            int numberBytes = fileinputstream.available();
-//            byte bytearray[] = new byte[numberBytes];
-//
-//            System.out.println("numberBytes" + numberBytes);
-//
-//            fileinputstream.read(bytearray);
 
             fileinputstream.close();
 
